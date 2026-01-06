@@ -443,11 +443,11 @@
 
 /* blocco sinistro: icona + testo */
 .opt-left{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  flex:1;
-  min-width:0;
+  display: flex;
+  flex-direction: row;        
+  align-items: center;        
+  gap: 12px;
+  justify-content: flex-start;
 }
 
 /* FIX: Webflow ti rimette margini ai <p> e sballa il centro verticale */
