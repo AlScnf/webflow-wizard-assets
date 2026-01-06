@@ -424,10 +424,10 @@
 
 /* Icona dentro le card (a sinistra del testo) */
 .opt-icon{
-  width:28px;
-  height:28px;
-  border-radius:10px;
-  background: #e5e7eb;
+  width:40px;
+  height:40px;
+  border-radius:14px;
+  background:#e5e7eb;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -435,6 +435,15 @@
 }
 
 .opt-icon img{
-  width:16px;
-  height:16px;
+  width:22px;
+  height:22px;
 }
+
+.opt-ui{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+
+
