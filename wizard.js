@@ -1302,6 +1302,7 @@ function allEquipVariantsSelected(){
 
       const toggleHtml = hasAgg ? `
         <div class="course-toggle">
+          <div class="course-toggle-label">Tipologia corso</div>
           <button type="button"
             class="ct-btn ${mode === "base" ? "is-active" : ""}"
             data-ct="base"
@@ -1329,7 +1330,6 @@ function allEquipVariantsSelected(){
           ${c.modalita ? `<div><b>Modalità:</b> ${escapeHtml(c.modalita)}</div>` : ""}
           <div style="margin-top:6px;">
             <b>Aggiornamento:</b> ${escapeHtml(c.aggiornamento || "-")}
-            ${mode === "agg" ? `<span class="ct-badge">Aggiornamento</span>` : ""}
           </div>
         </div>
 
