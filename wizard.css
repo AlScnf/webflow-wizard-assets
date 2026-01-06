@@ -450,12 +450,6 @@
   min-width:0;
 }
 
-/* evita che il testo sembri "alto" */
-.opt-title{
-  display:flex;
-  align-items:center;
-}
-
 /* FIX: Webflow ti rimette margini ai <p> e sballa il centro verticale */
 .wf-wizard .opt-title{
   margin: 0 !important;
