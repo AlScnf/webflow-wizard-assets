@@ -440,10 +440,32 @@
   height:22px;
 }
 
+/* la riga interna della card */
 .opt-ui{
   display:flex;
   align-items:center;
+  justify-content:space-between;
+  width:100%;
+  gap:12px;
 }
+
+/* blocco sinistro (icona + testo) */
+.opt-left{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+  flex:1;
+}
+
+/* titolo */
+.opt-title{
+  margin:0;
+  line-height:1.25;
+  display:flex;
+  align-items:center; /* centra rispetto all’icona */
+}
+
 
 
 
