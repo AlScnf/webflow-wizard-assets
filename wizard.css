@@ -457,81 +457,60 @@
 }
 
 /* ===== Course segmented toggle (CHILL / SPORT style) ===== */
-.course-toggle{
+/* ===== Force toggle styles over Webflow ===== */
+.wf-wizard .course-toggle{
   display:inline-flex;
   align-items:center;
   gap:0;
   padding:4px;
   border-radius:999px;
-  background:#eef0f2;               /* pill grey */
+  background:#eef0f2;
   border:1px solid rgba(0,0,0,.06);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.55);
   margin:10px 0 10px;
   width:fit-content;
-  user-select:none;
 }
 
-.ct-btn{
+.wf-wizard .course-toggle .ct-btn{
+  -webkit-appearance:none;
   appearance:none;
-  border:0;
-  background:transparent;
-  color: rgba(30,31,27,.65);
-  font-weight:600;
-  font-size:12px;
-  line-height:1;
-  padding:10px 14px;
-  border-radius:999px;
+  border:0 !important;
+  background:transparent !important;
+  padding:10px 14px !important;
+  margin:0 !important;
+  border-radius:999px !important;
+
+  font-family:"Poppins",sans-serif !important;
+  font-weight:600 !important;
+  font-size:12px !important;
+  line-height:1 !important;
+
+  color: rgba(30,31,27,.65) !important;
   cursor:pointer;
-  transition: all .16s ease;
   display:inline-flex;
   align-items:center;
   justify-content:center;
   gap:8px;
   white-space:nowrap;
+  box-shadow:none !important;
+  text-decoration:none !important;
 }
 
-.ct-btn:hover{
-  color: rgba(30,31,27,.85);
+.wf-wizard .course-toggle .ct-btn.is-active{
+  background:#fff !important;
+  color:#1e1f1b !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,.12), 0 1px 0 rgba(0,0,0,.06) !important;
 }
 
-.ct-btn.is-active{
-  background:#fff;                  /* active white */
-  color: var(--text-main);
-  box-shadow:
-    0 6px 16px rgba(0,0,0,.12),
-    0 1px 0 rgba(0,0,0,.06);
-}
-
-.ct-btn:focus{
-  outline:none;
-  box-shadow:
-    0 0 0 3px rgba(146,188,1,.18),
-    0 6px 16px rgba(0,0,0,.12);
-}
-
-/* optional: a small dot like in your mock */
-.ct-dot{
+.wf-wizard .course-toggle .ct-dot{
   width:8px;
   height:8px;
   border-radius:999px;
   background: rgba(30,31,27,.25);
 }
 
-.ct-btn.is-active .ct-dot{
+.wf-wizard .course-toggle .ct-btn.is-active .ct-dot{
   background: var(--accent);
 }
 
-/* optional: little badge near "Aggiornamento" row */
-.ct-badge{
-  display:inline-flex;
-  align-items:center;
-  margin-left:8px;
-  padding:4px 8px;
-  border-radius:999px;
-  font-size:11px;
-  font-weight:700;
-  background: rgba(146,188,1,.14);
-  color: var(--text-main);
-  border:1px solid rgba(146,188,1,.28);
-}
 
