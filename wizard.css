@@ -456,4 +456,9 @@
   align-items:center;
 }
 
+/* FIX: Webflow ti rimette margini ai <p> e sballa il centro verticale */
+.wf-wizard .opt-title{
+  margin: 0 !important;
+  display: block; /* evita layout strani: il p non deve essere flex */
+}
 
