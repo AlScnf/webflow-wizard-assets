@@ -1314,7 +1314,7 @@ function allEquipVariantsSelected(){
             data-ct="agg"
             data-course="${escapeHtml(c.id)}">
             <span class="ct-dot"></span>
-            Solo aggiornamento
+            Aggiornamento
           </button>
         </div>
       ` : "";
