@@ -524,3 +524,36 @@
     0 4px 10px rgba(0,0,0,.10);
 }
 
+#wfWizard .consent p{
+  font-size:13px;
+  color: var(--text-secondary);
+  font-weight:400;     /* normale */
+  line-height:1.35;
+}
+
+/* Titoli campi form: non bold + coerenti */
+#wfWizard .modal-form .field label{
+  font-size:13px;
+  color: var(--text-secondary);
+  font-weight:500;     /* normale, non bold */
+  margin:0 0 8px 0;
+}
+
+/* Input coerenti con card/mini-list */
+#wfWizard .modal-form .field input{
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:#fff;
+  padding:12px 12px;
+  font-size:14px;
+  font-weight:500;
+  color: var(--text-main);
+}
+
+/* Focus più "premium" e coerente con accent */
+#wfWizard .modal-form .field input:focus{
+  outline:none;
+  border-color: rgba(146,188,1,.55);
+  box-shadow: 0 0 0 3px rgba(146,188,1,.14);
+}
+
