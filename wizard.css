@@ -456,19 +456,6 @@
   display: block; /* evita layout strani: il p non deve essere flex */
 }
 
-
-/* separatore visivo leggero */
-.course-toggle .ct-btn + .ct-btn{
-  margin-left:2px;
-}
-
-/* bottoni */
-#wfWizard .ct-btn{
-  padding:6px 10px;               
-  border-radius:10px;
-  line-height:1;
-}
-
 /* wrapper: label sopra + pill sotto */
 #wfWizard .course-toggle-wrap{
   margin: 10px 0 12px;
@@ -482,3 +469,59 @@
   margin:0 0 6px 0;
   line-height:1.1;
 }
+
+#wfWizard .course-toggle-wrap{
+  margin: 10px 0 12px;
+}
+
+#wfWizard .course-toggle-label{
+  font-size:12px;
+  font-weight:600;
+  color: var(--text-secondary);
+  margin:0 0 6px 0;
+  line-height:1.1;
+}
+
+/* pill container (meno arrotondato) */
+#wfWizard .course-toggle{
+  display:inline-flex;
+  align-items:center;
+  padding:4px;
+  background:#eef0f2;
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:12px;     /* <-- meno tondo */
+  gap:2px;                /* <-- sostituisce margin-left hack */
+  user-select:none;
+}
+
+/* buttons */
+#wfWizard .course-toggle .ct-btn{
+  appearance:none;
+  border:0;
+  background:transparent;
+  color: rgba(30,31,27,.65);
+  font-weight:600;
+  font-size:12px;
+  line-height:1;
+  padding:8px 14px;
+  border-radius:8px;      /* <-- più squadrato */
+  cursor:pointer;
+  transition: all .15s ease;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap;
+}
+
+#wfWizard .course-toggle .ct-btn:hover{
+  color: rgba(30,31,27,.90);
+}
+
+#wfWizard .course-toggle .ct-btn.is-active{
+  background:#fff;
+  color: var(--text-main);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,.06),
+    0 4px 10px rgba(0,0,0,.10);
+}
+
