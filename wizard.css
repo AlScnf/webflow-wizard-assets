@@ -1,4 +1,6 @@
-  .wf-wizard{
+body { outline: 10px solid red !important; }
+
+.wf-wizard{
     --bg:#ffffff;
     --text-main:#1e1f1b;
     --text-secondary:#5b5d60;
