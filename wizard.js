@@ -744,7 +744,7 @@
     }
 
     function courseToInlineText(c){
-        const det = c.dettagli ? ` (${c.dettagli})` : "";
+        // const det = c.dettagli ? ` (${c.dettagli})` : "";
         const mode = state.courseMode[c.id] || "base"; // "base" | "agg"
         const tipo = mode === "agg" ? "Aggiornamento" : "Nuovo";
         return `${c.title}${det} - ${tipo}`;
