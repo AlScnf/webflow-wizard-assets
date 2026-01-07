@@ -1,5 +1,3 @@
-console.log("WIZARD VERSION KILL-CACHE-1");
-
 (function(){
   "use strict";
 
@@ -748,6 +746,20 @@ console.log("WIZARD VERSION KILL-CACHE-1");
       return `${c.title}${det}`;
     }
 
+    function courseToInlineText(c){
+        const det = c.dettagli ? ` (${c.dettagli})` : "";
+        const mode = state.courseMode[c.id] || "base"; // "base" | "agg"
+        const tipo = mode === "agg" ? "Aggiornamento" : "Nuovo";
+        return `${c.title}${det} - ${tipo}`;
+        }
+
+    function joinCoursesInlineText(courses){
+        return (courses || [])
+            .map(courseToInlineText)
+            .join(" | ");
+    }
+
+
     function joinCoursesText(courses){
       return (courses || [])
         .map(courseToText)
@@ -1495,49 +1507,33 @@ function allEquipVariantsSelected(){
     const recommended = state.computedCourses || [];
     const selected = recommended.filter(c => state.selectedCourses.has(c.id));
 
-    function courseRow(c){
-      const mode = state.courseMode[c.id] || "base";
-      return {
-        corso: c.title,
-        tipo: mode === "agg" ? "Solo aggiornamento" : "Nuovo",
-        dettagli: c.dettagli || "",
-        aggiornamento: c.aggiornamento || "",
-        modalita: c.modalita || "",
-        link: c.link || ""
-      };
-    }
-
     const recommended_rows = recommended.map(courseRow);
     const selected_rows = selected.map(courseRow);
 
 
 
     const payload = {
-      timestamp: new Date().toISOString(),
+        timestamp: new Date().toISOString(),
 
-      nome: name,
-      email: email,
-      telefono: phone,
+        nome: name,
+        email: email,
+        telefono: phone,
 
-      ruoli: joinLabels(Array.from(state.answers.roles)),
-      rischio: riskToLabel(state.answers.risk),
-      cantieri: cantieriToLabel(state.answers.cantieri),
-      settore_specializzazione: sectorToLabel(state.answers.sector),
+        ruoli: joinLabels(Array.from(state.answers.roles)),
+        rischio: riskToLabel(state.answers.risk),
+        cantieri: cantieriToLabel(state.answers.cantieri),
+        settore_specializzazione: sectorToLabel(state.answers.sector),
 
-      attrezzature: joinLabels(Array.from(state.answers.equip).filter(x => x !== "none")),
-      attrezzature_dettaglio: equipDetailToText(),
+        attrezzature: joinLabels(Array.from(state.answers.equip).filter(x => x !== "none")),
+        attrezzature_dettaglio: equipDetailToText(),
 
-      // STRINGHE "human readable" (se vuoi tenerle)
-      corsi_raccomandati: joinCoursesText(recommended),
-      corsi_scelti: joinCoursesText(selected),
+        corsi_raccomandati: joinCoursesInlineText(recommended),
+        corsi_scelti: joinCoursesInlineText(selected),
 
-      // ✅ ARRAY puliti per spreadsheet (consigliatissimo)
-      corsi_raccomandati_dettaglio: recommended_rows,
-      corsi_scelti_dettaglio: selected_rows,
-
-      num_corsi_raccomandati: recommended.length,
-      num_corsi_scelti: selected.length
+        num_corsi_raccomandati: recommended.length,
+        num_corsi_scelti: selected.length
     };
+
 
 
 
