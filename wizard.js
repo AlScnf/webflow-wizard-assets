@@ -1316,7 +1316,9 @@ function allEquipVariantsSelected(){
 
       const toggleHtml = hasAgg ? `
         <div class="course-toggle-wrap">
-          <div class="course-meta">Tipologia corso</div>
+          <div class="course-meta">
+            <div><b>Tipologia corso:</b></div>
+            </div>
 
             <div class="course-toggle">
             <button type="button"
