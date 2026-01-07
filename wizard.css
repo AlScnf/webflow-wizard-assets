@@ -456,72 +456,15 @@
   display: block; /* evita layout strani: il p non deve essere flex */
 }
 
-.ct-btn{
-  appearance:none;
-  border:0;
-  background:transparent;
-  color: rgba(30,31,27,.7);
-  font-weight:600;
-  font-size:12px;
-  padding:6px 10px;
-  cursor:pointer;
-  transition: all .15s ease;
-  border-radius:10px;          
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  white-space:nowrap;
-}
-
-.ct-btn:hover{
-  background: rgba(0,0,0,.04);
-  color: var(--text-main);
-}
-
-.ct-btn.is-active{
-  background:#ffffff;
-  color: var(--text-main);
-  box-shadow:
-    0 1px 0 rgba(0,0,0,.06),
-    0 2px 8px rgba(0,0,0,.08);
-}
 
 /* separatore visivo leggero */
 .course-toggle .ct-btn + .ct-btn{
   margin-left:2px;
 }
 
-/* dot aggiornamento */
-.ct-dot{
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background: rgba(30,31,27,.3);
-}
-
-.ct-btn.is-active .ct-dot{
-  background: var(--accent);
-}
-
-.course-toggle-label{
-  font-size:12px;
-  font-weight:600;
-  color: var(--text-secondary);
-  margin-bottom:6px;
-}
-
-/* titolo breve */
-#wfWizard .course-toggle-label{
-  font-size:12px;
-  font-weight:600;
-  color: var(--text-secondary);
-  margin:0;          /* ✅ reset */
-  line-height:1.1;
-}
-
 /* bottoni */
 #wfWizard .ct-btn{
-  padding:6px 10px;               /* ✅ compatto */
+  padding:6px 10px;               
   border-radius:10px;
   line-height:1;
 }
@@ -539,59 +482,3 @@
   margin:0 0 6px 0;
   line-height:1.1;
 }
-
-/* pill container */
-#wfWizard .course-toggle{
-  display:inline-flex;
-  align-items:stretch;
-  padding:2px;
-  background:#f1f3f5;
-  border:1px solid var(--border);
-  border-radius:12px;
-  width:fit-content;
-  gap:2px;
-}
-
-/* buttons */
-#wfWizard .ct-btn{
-  appearance:none;
-  border:0;
-  background:transparent;
-  color: rgba(30,31,27,.7);
-  font-weight:600;
-  font-size:12px;
-  padding:6px 10px;
-  cursor:pointer;
-  transition: all .15s ease;
-  border-radius:10px;
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  white-space:nowrap;
-  line-height:1;
-}
-
-#wfWizard .ct-btn:hover{
-  background: rgba(0,0,0,.04);
-  color: var(--text-main);
-}
-
-#wfWizard .ct-btn.is-active{
-  background:#ffffff;
-  color: var(--text-main);
-  box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 2px 8px rgba(0,0,0,.08);
-}
-
-/* dot */
-#wfWizard .ct-dot{
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background: rgba(30,31,27,.3);
-}
-
-#wfWizard .ct-btn.is-active .ct-dot{
-  background: var(--accent);
-}
-
-
