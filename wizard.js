@@ -1,3 +1,4 @@
+console.log("WIZARD VERSION 2026-01-07 14:32");
 (function(){
   "use strict";
 
