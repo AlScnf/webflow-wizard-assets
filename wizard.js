@@ -1,4 +1,5 @@
-console.log("WIZARD VERSION 2026-01-07 14:32");
+console.log("WIZARD VERSION KILL-CACHE-1");
+
 (function(){
   "use strict";
 
