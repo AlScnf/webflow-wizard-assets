@@ -1510,10 +1510,6 @@ function allEquipVariantsSelected(){
     const recommended = state.computedCourses || [];
     const selected = recommended.filter(c => state.selectedCourses.has(c.id));
 
-    const recommended_rows = recommended.map(courseRow);
-    const selected_rows = selected.map(courseRow);
-
-
 
     const payload = {
         timestamp: new Date().toISOString(),
