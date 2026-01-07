@@ -534,4 +534,42 @@
   margin-bottom: 6px;     /* ✅ stacca dai bottoni */
 }
 
+/* wrapper toggle: titolo sopra, pill sotto */
+#wfWizard .course-toggle{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:6px;
+  margin: 8px 0 12px; /* ✅ margin-bottom */
+  padding: 0;         /* ✅ no padding extra */
+}
+
+/* titolo breve */
+#wfWizard .course-toggle-label{
+  font-size:12px;
+  font-weight:600;
+  color: var(--text-secondary);
+  margin:0;          /* ✅ reset */
+  line-height:1.1;
+}
+
+/* pill container */
+#wfWizard .course-toggle-buttons{
+  display:inline-flex;
+  align-items:stretch;
+  padding:2px;                    /* ✅ meno padding */
+  background:#f1f3f5;
+  border:1px solid var(--border);
+  border-radius:12px;
+  width:fit-content;
+  gap:2px;                        /* ✅ spazio fra bottoni */
+}
+
+/* bottoni */
+#wfWizard .ct-btn{
+  padding:6px 10px;               /* ✅ compatto */
+  border-radius:10px;
+  line-height:1;
+}
+
 
