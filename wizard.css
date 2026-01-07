@@ -456,61 +456,73 @@
   display: block; /* evita layout strani: il p non deve essere flex */
 }
 
-/* ===== Course segmented toggle (CHILL / SPORT style) ===== */
-/* ===== Force toggle styles over Webflow ===== */
-.wf-wizard .course-toggle{
+.course-toggle{
   display:inline-flex;
-  align-items:center;
-  gap:0;
-  padding:4px;
-  border-radius:999px;
-  background:#eef0f2;
-  border:1px solid rgba(0,0,0,.06);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.55);
-  margin:10px 0 10px;
+  align-items:stretch;
+  padding:2px;
+  background:#f1f3f5;
+  border:1px solid var(--border);
+  border-radius:12px;          /
   width:fit-content;
 }
 
-.wf-wizard .course-toggle .ct-btn{
-  -webkit-appearance:none;
+.ct-btn{
   appearance:none;
-  border:0 !important;
-  background:transparent !important;
-  padding:10px 14px !important;
-  margin:0 !important;
-  border-radius:999px !important;
-
-  font-family:"Poppins",sans-serif !important;
-  font-weight:600 !important;
-  font-size:12px !important;
-  line-height:1 !important;
-
-  color: rgba(30,31,27,.65) !important;
+  border:0;
+  background:transparent;
+  color: rgba(30,31,27,.7);
+  font-weight:600;
+  font-size:12px;
+  padding:10px 14px;
   cursor:pointer;
+  transition: all .15s ease;
+  border-radius:10px;          
   display:inline-flex;
   align-items:center;
-  justify-content:center;
-  gap:8px;
+  gap:6px;
   white-space:nowrap;
-  box-shadow:none !important;
-  text-decoration:none !important;
 }
 
-.wf-wizard .course-toggle .ct-btn.is-active{
-  background:#fff !important;
-  color:#1e1f1b !important;
-  box-shadow: 0 6px 16px rgba(0,0,0,.12), 0 1px 0 rgba(0,0,0,.06) !important;
+.ct-btn:hover{
+  background: rgba(0,0,0,.04);
+  color: var(--text-main);
 }
 
-.wf-wizard .course-toggle .ct-dot{
-  width:8px;
-  height:8px;
-  border-radius:999px;
-  background: rgba(30,31,27,.25);
+.ct-btn.is-active{
+  background:#ffffff;
+  color: var(--text-main);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,.06),
+    0 2px 8px rgba(0,0,0,.08);
 }
 
-.wf-wizard .course-toggle .ct-btn.is-active .ct-dot{
+/* separatore visivo leggero */
+.course-toggle .ct-btn + .ct-btn{
+  margin-left:2px;
+}
+
+/* dot aggiornamento */
+.ct-dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background: rgba(30,31,27,.3);
+}
+
+.ct-btn.is-active .ct-dot{
   background: var(--accent);
+}
+
+
+.course-toggle-wrap{
+  margin:10px 0 6px;
+}
+
+.course-toggle-label{
+  font-size:12px;
+  font-weight:600;
+  color: var(--text-secondary);
+  margin-bottom:6px;
 }
 
 
