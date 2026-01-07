@@ -1330,6 +1330,7 @@ function allEquipVariantsSelected(){
             <span class="ct-dot"></span>
             Aggiornamento
           </button>
+          </div>
         </div>
       ` : "";
 
