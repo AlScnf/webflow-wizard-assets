@@ -1312,10 +1312,10 @@ function allEquipVariantsSelected(){
       const hasAgg = hasRealAgg(c);
 
       const toggleHtml = hasAgg ? `
-        <div class="course-toggle">
+        <div class="course-toggle-wrap">
           <div class="course-toggle-label">Tipologia corso</div>
 
-            <div class="course-toggle-buttons">
+            <div class="course-toggle">
             <button type="button"
                 class="ct-btn ${mode === "base" ? "is-active" : ""}"
                 data-ct="base"
