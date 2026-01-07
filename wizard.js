@@ -1308,8 +1308,11 @@ function allEquipVariantsSelected(){
       card.className = "course-card";
       card.setAttribute("data-id", c.id);
 
-      const mode = state.courseMode[c.id] || "base";
+      
       const hasAgg = hasRealAgg(c);
+      if (!hasAgg && state.courseMode[c.id] === "agg") state.courseMode[c.id] = "base";
+
+      const mode = state.courseMode[c.id] || "base";
 
       const toggleHtml = hasAgg ? `
         <div class="course-toggle-wrap">
