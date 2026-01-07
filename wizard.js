@@ -34,10 +34,7 @@
     ];
 
 
-  /* ========= DATA: CORSI (RUOLI) =========
-     id unico = dedup + selezione
-     meta = testo breve sulle ore/aggiornamento
-  */
+  
   const COURSES = {
     // Lavoratori
     fg: {
@@ -1317,12 +1314,14 @@ function allEquipVariantsSelected(){
       const toggleHtml = hasAgg ? `
         <div class="course-toggle">
           <div class="course-toggle-label">Tipologia corso</div>
-          <button type="button"
-            class="ct-btn ${mode === "base" ? "is-active" : ""}"
-            data-ct="base"
-            data-course="${escapeHtml(c.id)}">
-            Nuovo
-          </button>
+
+            <div class="course-toggle-buttons">
+            <button type="button"
+                class="ct-btn ${mode === "base" ? "is-active" : ""}"
+                data-ct="base"
+                data-course="${escapeHtml(c.id)}">
+                Nuovo
+            </button>
 
           <button type="button"
             class="ct-btn ct-agg ${mode === "agg" ? "is-active" : ""}"
