@@ -287,8 +287,8 @@
     overflow:hidden;
     padding-right:10px;
   }
-  .course-meta{ color:var(--text-secondary); font-size:12px; line-height:1.45; }
-  .course-meta b{ color:var(--text-main); font-weight:600; }
+  .course-meta{ color:var(--text-secondary); font-size:12px; line-height:1.45; margin-bottom: 10px; }
+  .course-meta b{ color:var(--text-main); font-weight:600; margin-bottom: 10px; }
   .course-check{
     position:absolute;
     top:14px;
