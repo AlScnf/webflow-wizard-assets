@@ -2,72 +2,72 @@
   {
     "code": "01.00.00",
     "desc": "Coltivazioni agricole e produzione di prodotti animali, caccia e servizi connessi",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.01.00",
     "desc": "Coltivazione di colture agricole non permanenti",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.02.00",
     "desc": "Coltivazione di colture permanenti",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.03.00",
     "desc": "Riproduzione delle piante",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.04.00",
     "desc": "Allevamento di animali",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.05.00",
     "desc": "Coltivazioni agricole associate all'allevamento di animali: attività mista",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.06.00",
     "desc": "Attività di supporto all'agricoltura e attività successive alla raccolta",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.07.00",
     "desc": "Caccia, cattura di animali e servizi connessi",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.11.00",
     "desc": "Coltivazione di cereali (escluso il riso), legumi da granella e semi oleosi",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.11.01",
     "desc": "Coltivazione di cereali (escluso il riso)",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.11.02",
     "desc": "Coltivazione di semi oleosi",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.11.03",
     "desc": "Coltivazione di legumi da granella",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.11.04",
     "desc": "Coltivazioni miste di cereali, legumi da granella e semi oleosi",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.11.10",
     "desc": "Coltivazione di cereali (escluso il riso)",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "01.11.20",
@@ -467,17 +467,17 @@
   {
     "code": "05.00.00",
     "desc": "Estrazione di carbone (esclusa torba)",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "05.01.00",
     "desc": "Estrazione di antracite",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "05.02.00",
     "desc": "Estrazione di lignite",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "05.10.00",
@@ -4812,32 +4812,32 @@
   {
     "code": "45.00.00",
     "desc": "Commercio all'ingrosso e al dettaglio e riparazione di autoveicoli e motocicli",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "45.01.00",
     "desc": "Commercio di autoveicoli",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "45.02.00",
     "desc": "Manutenzione e riparazione di autoveicoli",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "45.03.00",
     "desc": "Commercio di parti e accessori di autoveicoli",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "45.04.00",
     "desc": "Commercio, manutenzione e riparazione di motocicli e relative parti ed accessori",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "45.11.00",
     "desc": "Commercio di autovetture e di autoveicoli leggeri",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "45.11.01",
@@ -7367,32 +7367,32 @@
   {
     "code": "49.00.00",
     "desc": "Trasporto terrestre e trasporto mediante condotte",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "49.01.00",
     "desc": "Trasporto ferroviario di passeggeri (interurbano)",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "49.02.00",
     "desc": "Trasporto ferroviario di merci",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "49.03.00",
     "desc": "Altri trasporti terrestri di passeggeri",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "49.04.00",
     "desc": "Trasporto di merci su strada e servizi di trasloco",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "49.05.00",
     "desc": "Trasporto mediante condotte",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "49.10.00",
@@ -7817,27 +7817,27 @@
   {
     "code": "55.00.00",
     "desc": "Alloggio",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "55.01.00",
     "desc": "Alberghi e strutture simili",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "55.02.00",
     "desc": "Alloggi per vacanze e altre strutture per brevi soggiorni",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "55.03.00",
     "desc": "Aree di campeggio e aree attrezzate per camper e roulotte",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "55.09.00",
     "desc": "Altri alloggi",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "55.10.00",
@@ -9937,37 +9937,37 @@
   {
     "code": "84.00.00",
     "desc": "Amministrazione pubblica e difesa; assicurazione sociale obbligatoria",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "84.01.00",
     "desc": "Amministrazione pubblica: amministrazione generale, economica e sociale",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "84.02.00",
     "desc": "Servizi collettivi delle amministrazioni pubbliche",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "84.03.00",
     "desc": "Assicurazione sociale obbligatoria",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "84.11.00",
     "desc": "Attività generali di amministrazione pubblica",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "84.11.01",
     "desc": "Attività degli organi legislativi ed esecutivi, centrali e locali; amministrazione finanziaria; amministrazioni regionali, provinciali e comunali",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "84.11.02",
     "desc": "Attività di pianificazione generale e servizi statistici generali",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "84.11.10",
@@ -10362,47 +10362,47 @@
   {
     "code": "86.00.00",
     "desc": "Assistenza sanitaria",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "86.01.00",
     "desc": "Servizi ospedalieri",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "86.02.00",
     "desc": "Servizi degli studi medici e odontoiatrici",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "86.09.00",
     "desc": "Altri servizi di assistenza sanitaria",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "86.10.00",
     "desc": "Servizi ospedalieri",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "86.10.01",
     "desc": "Ospedali e case di cura generici",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "86.10.02",
     "desc": "Ospedali e case di cura specialistici",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "86.10.03",
     "desc": "Istituti, cliniche e policlinici universitari",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "86.10.04",
     "desc": "Ospedali e case di cura per lunga degenza",
-    "risk": "nd"
+    "risk": "alto"
   },
   {
     "code": "86.10.10",
@@ -10587,17 +10587,17 @@
   {
     "code": "88.00.00",
     "desc": "Assistenza sociale non residenziale",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "88.01.00",
     "desc": "Assistenza sociale non residenziale per anziani e disabili",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "88.09.00",
     "desc": "Altre attività di assistenza sociale non residenziale",
-    "risk": "nd"
+    "risk": "medio"
   },
   {
     "code": "88.10.00",
@@ -10617,12 +10617,12 @@
   {
     "code": "90.00.00",
     "desc": "Attività creative, artistiche e di intrattenimento",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "90.01.00",
     "desc": "Rappresentazioni artistiche",
-    "risk": "nd"
+    "risk": "basso"
   },
   {
     "code": "90.01.01",
