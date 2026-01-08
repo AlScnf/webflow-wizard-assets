@@ -1004,7 +1004,7 @@ function getEquipById(id){
 
     // valida: tutte le macro selezionate con varianti devono avere una scelta
     btnEquipDetailNext.disabled = !allEquipVariantsSelected();
-  });
+  };
 
   btnEquipDetailNext.disabled = !allEquipVariantsSelected();
 }
