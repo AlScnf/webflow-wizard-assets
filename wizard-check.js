@@ -785,11 +785,12 @@
     }
 
     function courseToInlineText(c){
-        // const det = c.durata ? ` (${c.durata})` : "";
-        const mode = state.courseMode[c.id] || "base"; // "base" | "agg"
-        const tipo = mode === "agg" ? "Aggiornamento" : "Nuovo";
-        return `${c.title}${det} - ${tipo}`;
-        }
+      const det = c.durata ? ` (${c.durata})` : "";
+      const mode = state.courseMode[c.id] || "base"; // "base" | "agg"
+      const tipo = mode === "agg" ? "Aggiornamento" : "Nuovo";
+      return `${c.title}${det} - ${tipo}`;
+    }
+
 
     function joinCoursesInlineText(courses){
         return (courses || [])
@@ -994,7 +995,7 @@ function getEquipById(id){
   });
 
   // listener
-  equipDetailContainer.addEventListener("change", (e) => {
+  equipDetailContainer.onchange = (e) => {
     const name = e.target && e.target.name ? e.target.name : "";
     if (!name.startsWith("variant_")) return;
 
