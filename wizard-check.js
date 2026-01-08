@@ -246,7 +246,7 @@
   cspcse_base: {
     id:"cspcse_base",
     title:"Coordinatori CSP/CSE - Corso base",
-    dettagli:"120 ore (28+52+16+24)",
+    durata:"120 ore (28+52+16+24)",
     aggiornamento:"40 ore ogni 5 anni",
     link:""
   },
@@ -255,9 +255,11 @@
   // Ambienti confinati
   confinati: {
     id:"confinati",
-    title:"Ambienti Confinati - Formazione base",
-    dettagli:"12 ore (4 giuridico + 8 pratico)",
-    aggiornamento:"4 ore ogni 5 anni",
+    title:"Ambienti Confinati - Modulo Giuridico + Pratico",
+    durata:"12 ore (4 giuridico + 8 pratico)",
+    modalita:"Presenza",
+    aggiornamento:"4 ore ogni 5 anni solo Pratico",
+    modalita_agg:"Presenza",
     link:""
   }
   };
@@ -309,8 +311,8 @@
             { id:"carrelli_industriali", label:"Carrelli - Industriali semoventi" },
             { id:"carrelli_braccio_telescopico", label:"Carrelli - A braccio telescopico" },
             { id:"carrelli_rotativi", label:"Carrelli - Sollevatori telescopici rotativi" },
-            { id:"carrelli_combo_16", label:"Carrelli - Industriali + telescopico + rotativi" },
-            { id:"carrelli_combo_14", label:"Carrelli - Telescopico + rotativi" },
+            { id:"carrelli_combo_16", label:"Carrelli - Industriali semoventi a braccio telescopico e rotativi" },
+            { id:"carrelli_combo_14", label:"Carrelli - Semoventi a braccio telescopico + rotativi per sollavemnto carichi sospesi e persone" },
             { id:"carrelli_unknown", label:"Non lo so" }
         ],
 
@@ -341,8 +343,8 @@
       course:{
         id:"equip_ple_con",
         title:"Abilitazione PLE - Con stabilizzatori",
-        dettagli:"8 ore (4 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"8 ore (4 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -353,8 +355,8 @@
       course:{
         id:"equip_ple_senza",
         title:"Abilitazione PLE - Senza stabilizzatori",
-        dettagli:"8 ore (4 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"8 ore (4 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -365,8 +367,8 @@
       course:{
         id:"equip_ple_entrambi",
         title:"Abilitazione PLE - Con e senza stabilizzatori",
-        dettagli:"10 ore (6 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"10 ore (4 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -379,8 +381,8 @@
       course:{
         id:"equip_gru_autocarro",
         title:"Abilitazione Gru per autocarro",
-        dettagli:"12 ore (4 tecnico + 8 pratico)",
-        modalita:"Solo presenza",
+        durata:"12 ore (4 teorico/tecnico + 8 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -391,8 +393,8 @@
       course:{
         id:"equip_gru_torre_basso",
         title:"Abilitazione Gru a torre - Rotazione in basso",
-        dettagli:"12 ore (8 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"12 ore (8 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -403,8 +405,8 @@
       course:{
         id:"equip_gru_torre_alto",
         title:"Abilitazione Gru a torre - Rotazione in alto",
-        dettagli:"12 ore (8 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"12 ore (8 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -415,8 +417,8 @@
       course:{
         id:"equip_gru_torre_basso_alto",
         title:"Abilitazione Gru a torre - Rotazione in basso e in alto",
-        dettagli:"14 ore (8 tecnico + 6 pratico)",
-        modalita:"Solo presenza",
+        durata:"14 ore (8 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -427,8 +429,8 @@
       course:{
         id:"equip_gru_mobili",
         title:"Abilitazione Gru mobili",
-        dettagli:"14 ore (7 tecnico + 7 pratico)",
-        modalita:"Solo presenza",
+        durata:"14 ore (7 teorico/tecnico + 7 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -440,8 +442,8 @@
       course:{
         id:"equip_gru_mobili_falcone",
         title:"Gru mobili - Modulo aggiuntivo (falcone telescopico / brandeggiabile)",
-        dettagli:"8 ore (4 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"8 ore (4 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -454,8 +456,8 @@
       course:{
         id:"equip_carrelli_industriali",
         title:"Abilitazione Carrelli industriali semoventi",
-        dettagli:"12 ore (8 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"12 ore (8 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -466,8 +468,8 @@
       course:{
         id:"equip_carrelli_braccio_telescopico",
         title:"Abilitazione Carrelli a braccio telescopico",
-        dettagli:"12 ore (8 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"12 ore (8 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -478,8 +480,8 @@
       course:{
         id:"equip_carrelli_rotativi",
         title:"Abilitazione Sollevatori telescopici rotativi",
-        dettagli:"12 ore (8 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"12 ore (8 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -489,9 +491,9 @@
       covers:["carrelli_combo_16"],
       course:{
         id:"equip_carrelli_combo_16",
-        title:"Abilitazione Carrelli (industriali + telescopico + rotativi)",
-        dettagli:"16 ore (8 tecnico + 8 pratico)",
-        modalita:"Solo presenza",
+        title:"Abilitazione Carrelli industriali semoventi a braccio telescopico e rotativi",
+        durata:"16 ore (8 teorico/tecnico + 8 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -501,9 +503,9 @@
       covers:["carrelli_combo_14"],
       course:{
         id:"equip_carrelli_combo_14",
-        title:"Abilitazione Carrelli (telescopico + rotativi)",
-        dettagli:"14 ore (8 tecnico + 6 pratico)",
-        modalita:"Solo presenza",
+        title:"Abilitazione Carrelli semoventi a braccio telescopico e rotativi per sollevamento carichi sospesi e persone",
+        durata:"14 ore (8 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -516,8 +518,8 @@
       course:{
         id:"equip_trattori_ruote",
         title:"Abilitazione Trattori a ruote",
-        dettagli:"8 ore (3 tecnico + 5 pratico)",
-        modalita:"Solo presenza",
+        durata:"8 ore (3 teorico/tecnico + 5 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -528,8 +530,8 @@
       course:{
         id:"equip_trattori_cingoli",
         title:"Abilitazione Trattori a cingoli",
-        dettagli:"8 ore (3 tecnico + 5 pratico)",
-        modalita:"Solo presenza",
+        durata:"8 ore (3 teorico/tecnico + 5 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -542,8 +544,8 @@
       course:{
         id:"equip_mme_escavatori_idraulici",
         title:"Abilitazione MMT - Escavatori idraulici",
-        dettagli:"10 ore (4 tecnico + 6 pratico)",
-        modalita:"Solo presenza",
+        durata:"10 ore (4 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -554,8 +556,8 @@
       course:{
         id:"equip_mme_escavatori_fune",
         title:"Abilitazione MMT - Escavatori a fune",
-        dettagli:"10 ore (4 tecnico + 6 pratico)",
-        modalita:"Solo presenza",
+        durata:"10 ore (4 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -566,8 +568,8 @@
       course:{
         id:"equip_mme_caricatori_frontali",
         title:"Abilitazione MMT - Caricatori frontali",
-        dettagli:"10 ore (4 tecnico + 6 pratico)",
-        modalita:"Solo presenza",
+        durata:"10 ore (4 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -578,8 +580,8 @@
       course:{
         id:"equip_mme_terne",
         title:"Abilitazione MMT - Terne",
-        dettagli:"10 ore (4 tecnico + 6 pratico)",
-        modalita:"Solo presenza",
+        durata:"10 ore (4 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -590,8 +592,8 @@
       course:{
         id:"equip_mme_autoribaltabili_cingoli",
         title:"Abilitazione MMT - Autoribaltabili a cingoli",
-        dettagli:"10 ore (4 tecnico + 6 pratico)",
-        modalita:"Solo presenza",
+        durata:"10 ore (4 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -602,8 +604,8 @@
       course:{
         id:"equip_mme_combo_16",
         title:"Abilitazione MMT - Escavatori idraulici + caricatori + terne",
-        dettagli:"16 ore (4 tecnico + 12 pratico)",
-        modalita:"Solo presenza",
+        durata:"16 ore (4 teorico/tecnico + 12 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -616,8 +618,8 @@
       course:{
         id:"equip_pompe_calcestruzzo",
         title:"Abilitazione Pompe calcestruzzo",
-        dettagli:"14 ore (7 tecnico + 7 pratico)",
-        modalita:"Solo presenza",
+        durata:"14 ore (7 teorico/tecnico + 7 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -630,8 +632,8 @@
       course:{
         id:"equip_raccogli_frutta",
         title:"Abilitazione Raccogli frutta",
-        dettagli:"8 ore (4 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"8 ore (4 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -644,8 +646,8 @@
       course:{
         id:"equip_caricatori_materiali",
         title:"Abilitazione Caricatori materiali",
-        dettagli:"8 ore (4 tecnico + 4 pratico)",
-        modalita:"Solo presenza",
+        durata:"8 ore (4 teorico/tecnico + 4 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -658,8 +660,8 @@
       course:{
         id:"equip_carroponte_cabina",
         title:"Abilitazione Carroponte - Comando in cabina",
-        dettagli:"10 ore (4 tecnico + 6 pratico)",
-        modalita:"Solo presenza",
+        durata:"10 ore (4 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -670,8 +672,8 @@
       course:{
         id:"equip_carroponte_pensile",
         title:"Abilitazione Carroponte - Comando pensile o radiocomandato",
-        dettagli:"10 ore (4 tecnico + 6 pratico)",
-        modalita:"Solo presenza",
+        durata:"10 ore (4 teorico/tecnico + 6 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -682,8 +684,8 @@
       course:{
         id:"equip_carroponte_combo_11",
         title:"Abilitazione Carroponte - Comando pensile o in cabina",
-        dettagli:"11 ore (4 tecnico + 7 pratico)",
-        modalita:"Solo presenza",
+        durata:"11 ore (4 teorico/tecnico + 7 pratico)",
+        modalita:"Tutti i moduli e aggiornamento in presenza",
         aggiornamento:"4 ore pratiche ogni 5 anni",
         link:""
       }
@@ -777,13 +779,13 @@
     }
 
     function courseToText(c){
-      // “titolo (dettagli)” -> es: “Formazione Preposto (12 ore)”
-      const det = c.dettagli ? ` (${c.dettagli})` : "";
+      // “titolo (durata)” -> es: “Formazione Preposto (12 ore)”
+      const det = c.durata ? ` (${c.durata})` : "";
       return `${c.title}${det}`;
     }
 
     function courseToInlineText(c){
-        // const det = c.dettagli ? ` (${c.dettagli})` : "";
+        // const det = c.durata ? ` (${c.durata})` : "";
         const mode = state.courseMode[c.id] || "base"; // "base" | "agg"
         const tipo = mode === "agg" ? "Aggiornamento" : "Nuovo";
         return `${c.title}${det} - ${tipo}`;
@@ -829,7 +831,7 @@
       return map[v] || "";
     }
 
-    // Dettaglio attrezzature in chiaro: "PLE: PLE - Con stabilizzatori; Gru: Gru - Mobili"
+    // duratao attrezzature in chiaro: "PLE: PLE - Con stabilizzatori; Gru: Gru - Mobili"
     function equipDetailToText(){
       const parts = [];
       for (const eq of state.answers.equip) {
@@ -1384,7 +1386,7 @@ function allEquipVariantsSelected(){
         ${toggleHtml}
 
         <div class="course-meta">
-          <div><b>Dettagli:</b> ${escapeHtml(c.dettagli || "-")}</div>
+          <div><b>durata:</b> ${escapeHtml(c.durata || "-")}</div>
           ${c.modalita ? `<div><b>Modalità:</b> ${escapeHtml(c.modalita)}</div>` : ""}
           <div style="margin-top:6px;">
             <b>Aggiornamento:</b> ${escapeHtml(c.aggiornamento || "-")}
@@ -1492,7 +1494,7 @@ function allEquipVariantsSelected(){
         const modalita = c.modalita ? ` • Modalità: ${escapeHtml(c.modalita)}` : "";
         return `• <b>${escapeHtml(c.title)}</b><br>
             <span style="font-size:12px;">
-            Dettagli: ${escapeHtml(c.dettagli||"-")}
+            durata: ${escapeHtml(c.durata||"-")}
             ${modalita}
             • Aggiornamento: ${escapeHtml(c.aggiornamento||"-")}
             </span>`;
@@ -1565,7 +1567,7 @@ function allEquipVariantsSelected(){
         settore_specializzazione: sectorToLabel(state.answers.sector),
 
         attrezzature: joinLabels(Array.from(state.answers.equip).filter(x => x !== "none")),
-        attrezzature_dettaglio: equipDetailToText(),
+        attrezzature_duratao: equipDetailToText(),
 
         corsi_raccomandati: joinCoursesInlineText(recommended),
         corsi_scelti: joinCoursesInlineText(selected),
