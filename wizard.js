@@ -1387,7 +1387,7 @@ function allEquipVariantsSelected(){
         ${toggleHtml}
 
         <div class="course-meta">
-          <div><b>durata:</b> ${escapeHtml(c.durata || "-")}</div>
+          <div><b>Durata:</b> ${escapeHtml(c.durata || "-")}</div>
           ${c.modalita ? `<div><b>Modalità:</b> ${escapeHtml(c.modalita)}</div>` : ""}
           <div style="margin-top:6px;">
             <b>Aggiornamento:</b> ${escapeHtml(c.aggiornamento || "-")}
